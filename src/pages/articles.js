@@ -1,3 +1,9 @@
+// Some changes are being made in this file
+
+// Changes - Dynamically adding articles and their info as provided in the articles.json file
+
+// Featured Articles must to be hard coded
+
 import AnimatedText from '@/components/AnimatedText'
 import Layout from '@/components/Layout'
 import React from 'react'
@@ -6,6 +12,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import article2 from "../../public/images/articles/create loading screen in react js.jpg"
 import article1 from "../../public/images/articles/pagination component in reactjs.jpg"
+import articlesData from '../../public/articles.json'; // Import the JSON data
 import { motion } from 'framer-motion'
 import TransitionEffect from '@/components/TransitionEffect'
 
@@ -49,7 +56,7 @@ const FeaturedArticle = ({img, title, time, summary, link}) => {
     )
 }
 
-const articles = () => {
+const Articles = ({ articles }) => {
   return (
     <>
          <Head>
@@ -69,36 +76,16 @@ const articles = () => {
                 </ul>
                 <h2 className='font-bold text-4xl w-full text-center my-16 mt-32'>All Articles</h2>
                 <ul>
-                    <Article 
-                    title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
-                    date="March 22, 2024"
-                    link="/"
-                    />
-                    <Article 
-                    title="Silky Smooth Scrolling In Reactjs: A Step-By-Step Guide For React Developers"
-                    date="February 2, 2024"
-                    link="/"
-                    />
-                    <Article 
-                    title="Creating An Efficient Modal Component In React Using Hooks And Portals"
-                    date="December 17, 2023"
-                    link="/"
-                    />
-                    <Article 
-                    title="Build A Fabulous Todo List App With React, Redux And Framer-Motion"
-                    date="October 3, 2023"
-                    link="/"
-                    />
-                    <Article 
-                    title="Redux Simplified: A Beginner's Guide For Web Developers"
-                    date="April 20, 2023"
-                    link="/"
-                    />
-                    <Article 
-                    title="What Is Higher Order Component (Hoc) In React?"
-                    date="June 5, 2022"
-                    link="/"
-                    />
+                    {articles.map((article, index) => (
+                        <Article 
+                        key={index}
+                        title= {article.title}
+                        date= {article.date}
+                        link= {article.link}
+                        />
+                    ))}
+
+                    
                 </ul>
             </Layout>
         </main>
@@ -106,4 +93,14 @@ const articles = () => {
   )
 }
 
-export default articles
+// Fetch data from JSON file during build time
+export const getStaticProps = async () => {
+    const articles = articlesData; // Importing JSON data
+    return {
+        props: {
+            articles, // Pass the projects data as props
+        },
+    };
+};
+
+export default Articles;

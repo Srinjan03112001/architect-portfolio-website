@@ -1,3 +1,9 @@
+// Some changes are being made in this file
+
+// Changes - Images are dynamically added into pages by adding the jpg into the public/images folder and adding the image metadata into a JSON file
+
+// Featured Projects must to be hard coded
+
 import AnimatedText from '@/components/AnimatedText'
 import Layout from '@/components/Layout'
 import React from 'react'
@@ -6,6 +12,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { GithubIcon } from '@/components/Icons'
 import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg"
+import projectsData from '../../public/projects.json'; // Import the JSON data
 import TransitionEffect from '@/components/TransitionEffect'
 
 
@@ -45,6 +52,9 @@ const Project = ({title, img, link}) => {
                 className='w-full cursor-pointer overflow-hidden rounded-lg'
                 >
                     <Image src={img} alt={title} className='w-full h-auto rounded-lg' 
+                    layout="responsive"
+                    width={800} // You can still provide a width
+                   height={600} // You can still provide a height to maintain aspect ratio 
                     priority
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
@@ -61,7 +71,7 @@ const Project = ({title, img, link}) => {
     )
 }
 
-const projects = () => {
+const Projects = ({ projects }) => {
   return (
     <>
         <Head>
@@ -83,30 +93,11 @@ const projects = () => {
                         link="/" type="Featured Project" img={project1} github="/"
                         />
                     </div>
-                    <div className='col-span-6 sm:col-span-12'>
-                        <Project
-                        title="Crypto Screener Application"
-                        link="/" type="Featured Project" img={project1}
-                        />
-                    </div>
-                    <div className='col-span-6 sm:col-span-12'>
-                        <Project
-                        title="Crypto Screener Application"
-                        link="/" type="Featured Project" img={project1}
-                        />
-                    </div>
-                    <div className='col-span-6 sm:col-span-12'>
-                        <Project
-                        title="Crypto Screener Application"
-                        link="/" type="Featured Project" img={project1}
-                        />
-                    </div>
-                    <div className='col-span-6 sm:col-span-12'>
-                        <Project
-                        title="Crypto Screener Application"
-                        link="/" type="Featured Project" img={project1}
-                        />
-                    </div>
+                   {projects.map((project, index) => (
+                        <div key={index} className='col-span-6 sm:col-span-12'>
+                            <Project title={project.title} img={project.img} link={project.link} />
+                        </div>
+                   ))}
                 </div>
             </Layout>
         </main>
@@ -114,4 +105,14 @@ const projects = () => {
   )
 }
 
-export default projects
+// Fetch data from JSON file during build time
+export const getStaticProps = async () => {
+    const projects = projectsData; // Importing JSON data
+    return {
+        props: {
+            projects, // Pass the projects data as props
+        },
+    };
+};
+
+export default Projects;

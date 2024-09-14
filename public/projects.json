@@ -1,0 +1,23 @@
+[
+    {
+      "title": "Dev-Dreaming Application",
+      "img": "/images/projects/devdreaming.jpg",
+      "link": "/"
+    },
+    {
+      "title": "Agency Website",
+      "img": "/images/projects/agency-website-cover-image.jpg",
+      "link": "/"
+    },
+    {
+      "title": "Fashion Studio Website",
+      "img": "/images/projects/fashion-studio-website.jpg",
+      "link": "/"
+    },
+    {
+        "title": "NFT Collection Website",
+        "img": "/images/projects/nft-collection-website-cover-image.jpg",
+        "link": "/"
+      }
+  ]
+  
