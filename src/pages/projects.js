@@ -75,7 +75,7 @@ const Projects = ({ projects }) => {
   return (
     <>
         <Head>
-            <title>CodeBucks | Projects Page</title>
+            <title>Rituparna Saha | Projects Page</title>
             <meta name="description" content="any description"></meta>
         </Head>
         <TransitionEffect />

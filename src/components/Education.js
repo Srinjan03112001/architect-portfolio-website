@@ -43,16 +43,13 @@ const Education = () => {
             className='absolute left-9 top-0 w-[4px] h-full bg-dark dark:bg-primaryDark origin-top md:w-[2px] md:left-[30px] xs:left-[20px]' />
             <ul className='w-full flex flex-col items-start justify-between ml-4'>
                 <Details 
-                type="Bachelor Of Science In Computer Science" time ="2016-2020" place="Massachusetts Institute Of Technology (MIT)" info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-                Intelligence."
+                type="Bachelor of Architecture" time ="2012-2017" place="Indian Institute of Engineering Science and Technology, Shibpur" info="CGPA – 7.12"
                 />
                 <Details 
-                type="Master Of Computer Science" time ="2020-2022" place="Stanford University" info="Completed a master's project on deep learning, developing a new neural network architecture for natural 
-                language understanding."
+                type="Higher Secondary (WBCHSE)" time ="2012" place="Jadavpur Vidyapith, Kolkata" info="76% (1st Division)"
                 />
                 <Details 
-                type="Online Coursework" time ="2016-2020" place="Coursera And EdX" info="Completed coursework in advanced topics such as Reinforcement Learning, Computer Vision, and Machine 
-                Learning Engineering."
+                type="Secondary (WBBSE)" time ="2010" place="Jadavpur Vidyapith, Kolkata" info="84% (1st Division)"
                 />
                 
             </ul>

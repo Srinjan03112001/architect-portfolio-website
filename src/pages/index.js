@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Architect Portfolio Website</title>
+        <title>Rituparna Saha</title>
         <meta name="description" content="Created by Srinjan Mukherjee" />
         
       </Head>
@@ -27,21 +27,17 @@ export default function Home() {
               />
             </div>
             <div className='w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center'>
-              <AnimatedText text="Turning Vision Into Reality With Code And Design." className="!text-6xl !text-left *:
+              <AnimatedText text="Transforming Vision into Reality Through Design and Innovation" className="!text-6xl !text-left *:
               xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl
               "/>
               <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
-              As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. 
-              Explore my latest projects and articles, showcasing my expertise in React.js and web development.
+              As a skilled architect, I am dedicated to designing innovative and sustainable spaces that bring ideas to life. Explore my portfolio to see my latest projects, highlighting my expertise in architectural design, 3D modeling, and project coordination.
               </p>
               <div className="flex items-center self-start mt-2 lg:self-center ">
-                <Link href="/dummy.pdf" target={"_blank"}
-                className="flex items-center bg-dark text-light dark:bg-light dark:text-dark p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark dark:hover:bg-dark dark:hover:text-light border-2 border-solid border-transparent hover:border-dark dark:hover:border-light md:p-2 md:px-4 md:text-base"
+                <Link href="/RituparnaSaha_CV.pdf" target={"_blank"}
+                className="flex items-center bg-dark text-light dark:bg-light dark:text-dark p-2.5 px-6 rounded-lg text-base font-semibold hover:bg-light hover:text-dark dark:hover:bg-dark dark:hover:text-light border-2 border-solid border-transparent hover:border-dark dark:hover:border-light md:p-2 md:px-4 md:text-base"
                 download={true}>
-                  Resume <LinkArrow className="w-6 ml-1"/>
-                </Link>
-                <Link href="mailto:abcd@gmail.com" target={"_blank"} className="ml-4 text-lg font-medium capitalize text-dark dark:text-light underline md:text-base">
-                Contact
+                  Download CV <LinkArrow className="w-[16px] ml-1 "/>
                 </Link>
               </div>
             </div>

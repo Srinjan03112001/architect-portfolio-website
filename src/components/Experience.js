@@ -41,28 +41,30 @@ const Experience = () => {
             <motion.div 
             style={{scaleY: scrollYProgress}}
             className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-primaryDark md:w-[2px] md:left-[30px] xs:left-[20px]'/>
-            <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
+            <ul className='w-full flex flex-col items-start justify-between ml-4'>
                 <Details 
-                position="Software Engineer" company= "Google" time ="2022-Present" address="Mountain View, CA" work="Worked on a team responsible for developing new features for Google's 
-                search engine, including improving the accuracy and relevance of search results and 
-                developing new tools for data analysis and visualization."
-                companyLink="www.google.com"
+                position="Assistant Engineering Manager (Architect)" company= "L&T (MM)" time ="April 2023-Present" address="3B Shakespeare Sarani, Kolkata" work="I have worked on tender, approval, and construction drawings for factory projects across Gujarat, Odisha, and other states in India, ensuring compliance with green building rules, creating 3D models for client approval, coordinating with other disciplines, and performing quantity checks for architectural needs."
+                companyLink="https://www.larsentoubro.com/"
                 />
                 <Details 
-                position="Intern" company= "Facebook" time ="Summer 2021" address="Menlo Park, CA" work="Worked on a team responsible for developing a new mobile app feature that allowed users to create and 
-                share short-form video content, including designing and implementing a new user interface and developing 
-                the backend infrastructure to support the feature."
-                companyLink="www.facebook.com"
+                position="Architect" company= "AECOM" time ="February 2021 - April,2023" address="New Town, Kolkata" work="I have prepared tender, working, and detailed design drawings for the Patna Metro project, coordinated with other teams, and created land plans. My work includes 3D modeling for the Patna Metro and DAMMAM projects, clash detection with Navisworks, schematic drawings for a snow park, and detailed drawings for a high-speed metro in the NEOM project."
+                companyLink="https://aecom.com/"
                 />
                 <Details 
-                position="Software Developer" company= "Amazon" time ="2020-2021" address="Seattle, WA." work="Worked on a team responsible for developing Amazon's mobile app, including implementing new features such 
-                as product recommendations and user reviews, and optimizing the app's performance and reliability."
-                companyLink="www.amazon.com"
+                position="Architect" company= "Integra Ventures" time ="January 2020 - January 2021" address="Sector III, Salt lake, Kolkata" work="I have worked on Detailed Project Reports (DPR), Preliminary Project Reports (PPR), detailed interior drawings, sanction drawings, and working drawings for hospitals (200-500 beds) and college campuses."
+                companyLink="https://www.integra-ventures.com/"
                 />
                 <Details 
-                position="Teaching Assistant" company= "MIT" time ="Fall 2019" address="Massachusetts Ave, Cambridge, MA." work="Assisted in teaching a course on computer programming, held office hours to help students with assignments, 
-                and graded exams and assignments."
-                companyLink="www.mit.edu"
+                position="Architect" company= "Coordinate Techno Consultants" time ="September 2018 - December 2019" address="10/2, C.N. Roy Road, Kolkata" work="I have worked on Preliminary and Detailed Project Reports (PPR, DPR), as well as sanction, working, and as-built drawings for a variety of projects, including residential buildings, mixed-use developments, office spaces, hotels, and renovation projects. "
+                companyLink="https://ctcpl-architects.com/"
+                />
+                <Details 
+                position="Junior Architect" company="The Appropriate Alternative" time="March 2018 - August 2018" address="8, Central Road, Jadavpur, Kolkata" work="I have worked on Detailed Project Reports (DPR), sanction drawings, working drawings, and as-built drawings for universities, residential projects, and heritage restoration works, ensuring precision and adherence to project requirements."
+                companyLink="https://appropriatealternative.in/"
+                />
+                <Details 
+                position="Architect" company="Simoco Systems & Infrastructure Solutions Limited" time="June 2017 - March 2018" address="Sector- V Salt Lake, Bidhan Nagar, Kolkata" work="I have coordinated extensively with clients and consultants to ensure seamless communication and project alignment, while managing the documentation of all project phases to maintain accurate records and support decision-making throughout the process."
+                companyLink="https://simocosystem.net/"
                 />
             </ul>
         </div>
