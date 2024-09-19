@@ -37,7 +37,7 @@ export default function Home() {
                 <Link href="/RituparnaSaha_CV.pdf" target={"_blank"}
                 className="flex items-center bg-dark text-light dark:bg-light dark:text-dark p-2.5 px-6 rounded-lg text-base font-semibold hover:bg-light hover:text-dark dark:hover:bg-dark dark:hover:text-light border-2 border-solid border-transparent hover:border-dark dark:hover:border-light md:p-2 md:px-4 md:text-base"
                 download={true}>
-                  Download CV <LinkArrow className="w-[16px] ml-1 "/>
+                  Download CV 
                 </Link>
               </div>
             </div>
