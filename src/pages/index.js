@@ -35,7 +35,7 @@ export default function Home() {
               </p>
               <div className="flex items-center self-start mt-2 lg:self-center ">
                 <Link href="/RituparnaSaha_CV.pdf" target={"_blank"}
-                className="flex items-center bg-dark text-light dark:bg-light dark:text-dark p-2.5 px-6 rounded-lg text-base font-semibold hover:bg-light hover:text-dark dark:hover:bg-dark dark:hover:text-light border-2 border-solid border-transparent hover:border-dark dark:hover:border-light md:p-2 md:px-4 md:text-base"
+                className="flex items-center bg-dark text-light dark:bg-light dark:text-dark p-2.5 px-6 rounded-lg text-base font-semibold hover:bg-light hover:text-dark dark:hover:bg-dark dark:hover:text-light border-2 border-solid border-transparent hover:border-dark dark:hover:border-light md:p-2 md:px-4 md:text-lg"
                 download={true}>
                   Download CV 
                 </Link>
