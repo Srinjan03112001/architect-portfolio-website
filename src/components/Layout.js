@@ -32,16 +32,16 @@ const [mode, setMode] = useThemeSwitcher(); // Get the current theme (light or d
     <div className={`w-full h-full inline-block  z-0 p-32 xl:p-24 lg:p-16 md:p-12 sm:p-8 ${className} `}>
       
         {children}
-          <div className="fixed left-10 bottom-10 md:right-6 md:top-6 md:left-auto md:bottom-auto sm:right-6 sm:top-6 sm:left-auto sm:bottom-auto flex items-center justify-center overflow-hidden z-50">
+          <div className="fixed  left-10 bottom-10 md:right-6 md:top-6 md:left-auto md:bottom-auto sm:right-6 sm:top-6 sm:left-auto sm:bottom-auto flex items-center justify-center overflow-hidden z-50">
           <div className='w-46 h-auto flex items-center justify-center relative'>
           <button
               onClick={() => setMode(mode === "light" ? "dark" : "light")}
-              className={`ml-3 flex items-center justify-center rounded-full p-1 ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}`}
+              className={`ml-3 flex items-center justify-center rounded-full p-2 ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}`}
               >
                   {
                       mode === "dark"?
-                      <SunIcon className={"fill-dark h-20 md:h-10 sm:h-5"} />
-                      : <MoonIcon className={"fill-dark h-20 md:h-10 sm:h-5"} />
+                      <SunIcon className={"fill-dark h-6 sm:h-8 md:h-10 lg:h-16 xl:h-20 z-10"} />
+                      : <MoonIcon className={"fill-dark h-6 sm:h-8 md:h-10 lg:h-16 xl:h-20 z-10"} />
                   }
               </button>
           </div>
