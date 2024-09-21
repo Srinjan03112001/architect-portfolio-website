@@ -40,8 +40,8 @@ const [mode, setMode] = useThemeSwitcher(); // Get the current theme (light or d
               >
                   {
                       mode === "dark"?
-                      <SunIcon className={"fill-dark h-6 sm:h-8 md:h-10 lg:h-16 xl:h-20 z-10"} />
-                      : <MoonIcon className={"fill-dark h-6 sm:h-8 md:h-10 lg:h-16 xl:h-20 z-10"} />
+                      <SunIcon className={"fill-dark h-6 sm:h-6 md:h-10 lg:h-16 xl:h-20 z-10"} />
+                      : <MoonIcon className={"fill-dark h-6 sm:h-6 md:h-10 lg:h-16 xl:h-20 z-10"} />
                   }
               </button>
           </div>

@@ -30,7 +30,7 @@ export default function Home() {
             text="Transforming Vision into Reality Through Design and Innovation" 
             className="!text-7xl xl:!text-5xl lg:!text-6xl md:!text-5xl sm:!text-3xl mb-4" 
           />
-          <p className="my-4 text-lg font-medium md:text-sm sm:text-xs">
+          <p className="my-4 text-lg font-medium md:text-sm sm:text-sm">
             As a skilled architect, I am dedicated to designing innovative and sustainable spaces that bring ideas to life. Explore my portfolio to see my latest projects, highlighting my expertise in architectural design, 3D modeling, and project coordination.
           </p>
           <Link href="/RituparnaSaha_CV.pdf" target={"_blank"}
