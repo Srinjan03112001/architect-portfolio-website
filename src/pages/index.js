@@ -21,7 +21,7 @@ export default function Home() {
         <meta name="description" content="Created by Srinjan Mukherjee" />
       </Head>
       <TransitionEffect />
-      <main className="flex items-center justify-center w-full h-max-screen text-dark dark:text-light" >
+      <main className="flex items-center justify-center w-full min-h-screen text-dark dark:text-light" >
         <Layout className="flex flex-col items-center justify-center text-center w-full !xl:p-24 !lg:p-16 !md:p-12 !sm:p-8" 
        >
         
